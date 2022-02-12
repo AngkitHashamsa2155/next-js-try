@@ -1,5 +1,11 @@
+import Navbar from "../components/Navbar";
 const index = () => {
-  return <div>I am Home</div>;
+  return (
+    <div>
+      <Navbar />
+      <div>I am Home</div>
+    </div>
+  );
 };
 
 export default index;
