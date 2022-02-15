@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 import Navbar from "../../components/Navbar";
 import Link from "next/link";
 const Product = () => {
-  const router = useRouter();
-  console.log(router);
+  // const router = useRouter();
+  // console.log(router);
   return (
     <div>
       <Navbar />
@@ -37,7 +37,9 @@ const Product = () => {
           <a className="text-sky-400 cursor-pointer">Product 6</a>
         </Link>
       </div>
-      <p>The replace brings back to previously visited site</p>
+      <p className="text-center">
+        The replace brings back to previously visited site
+      </p>
     </div>
   );
 };
