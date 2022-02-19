@@ -3,13 +3,13 @@ import { useRouter } from "next/router";
 import Navbar from "../../components/Navbar";
 import Link from "next/link";
 const Product = () => {
-  // const router = useRouter();
+  const router = useRouter();
   // console.log(router);
   return (
     <div>
       <Navbar />
 
-      <div className="text-center mt-20 max-w-5xl mx-auto">
+      <div className="mx-auto mt-20 max-w-5xl text-center">
         <Link href="/">
           <a className="text-sky-500">back home</a>
         </Link>
@@ -19,11 +19,11 @@ const Product = () => {
         <br />
         <h1>/product/:productId/review/:reviewId</h1>
       </div>
-      <div className="text-center mt-20 max-w-5xl mx-auto">
+      <div className="mx-auto mt-20 max-w-5xl text-center">
         {[1, 2, 3, 4, 5].map((item) => (
           <p
             onClick={() => router.push(`product/${item}`)}
-            className="text-sky-400 cursor-pointer"
+            className="cursor-pointer text-sky-400"
             key={item}
           >
             Product {item}
@@ -34,7 +34,7 @@ const Product = () => {
           // key={item}
           replace
         >
-          <a className="text-sky-400 cursor-pointer">Product 6</a>
+          <a className="cursor-pointer text-sky-400">Product 6</a>
         </Link>
       </div>
       <p className="text-center">
